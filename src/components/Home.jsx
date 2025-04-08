@@ -11,7 +11,7 @@ function Home() {
     JSON.parse(localStorage.getItem("movieData")) || []
   );
   const [inputValue, setInputValue] = useState(
-    localStorage.getItem("searchQuery") || "Harry Potter"
+    localStorage.getItem("searchQuery") || "Harry"
   );
   const [favorites, setFavorites] = useState(
     JSON.parse(localStorage.getItem("favorites")) || {}
