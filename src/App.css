@@ -1,0 +1,157 @@
+body {
+    background-color: rgb(30, 13, 46);
+}
+
+.logo-size {
+    height: 100px;
+}
+
+.navbar-items {
+    color: rgb(99, 33, 161);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-items {
+    display: flex;
+    padding-left: 6%;
+    gap: 8px; /* Space between icon and text */
+    font-size: 18px;
+}
+
+/* Hide text on small screens */
+@media (max-width: 768px) {
+    .nav-text {
+        display: none;
+    }
+}
+
+.desc {
+    color: #6321a1;
+    font-weight: bold;
+    display: block;
+}
+
+.heading {
+    color: rgb(118, 20, 211);
+    font-weight: bold;
+}
+
+.search-btn {
+    border-radius: 3px;
+    color: rgb(195, 152, 245);
+    background-color: rgb(99, 33, 161);
+}
+
+.search-bar {
+    color: rgb(195, 152, 245);
+    background-color: rgb(99, 33, 161);
+    height: 60px;
+    font-size: 20px;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.search-bar::placeholder {
+    color: rgb(195, 152, 245);
+}
+
+.card-bg {
+    background-color: rgb(99, 33, 161);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    height: 340px; /* Fixed height */
+    width: 200px; /* Fixed width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-bg2 {
+    background-color: rgb(99, 33, 161);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-card {
+    width: 100%;
+    height: 260px; /* Ensure images have a uniform size */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.mov-title {
+    color: rgb(195, 152, 245);
+    height: 54px; /* Fixed height for two lines */
+    line-height: 18px; /* Each line takes 20px */
+    overflow: hidden; /* Prevents overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Ensures 2 lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+
+}
+
+@media (max-width: 576px) {
+    .card-bg {
+        height: 300px;
+        width: 180px;
+    }
+}
+
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.fav-icon {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.fav-icon.active {
+    color: red; /* Mark as favorite */
+}
+
+/* Favorite Message */
+.favorite-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(41, 19, 63, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    animation: fadeInOut 2s ease-in-out;
+}
+
+/* Message Animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.single{
+    height: 450px;
+
+}
