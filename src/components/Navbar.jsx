@@ -9,7 +9,7 @@ function Navbar() {
     <div className="container-fluid">
       <div className="row align-items-center">
         <div className="col-8">
-          <img className="logo-size" src="../../public/assets/logo-transparent-png.png" alt="Movie Logo" />
+          <img className="logo-size" src="/assets/logo-transparent-png.png" alt="Movie Logo" />
         </div>
         <div className="col-2 navbar-items">
           <Link to="/favourite" className="nav-link">
